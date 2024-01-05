@@ -82,7 +82,9 @@ const Books = () => {
               ))}
             </div>
             <div className="flex justify-center">
-              <button className="text-center mt-10 cursor-pointer  bg-primary text-white py-1 px-5 rounded-md">
+              <button className="text-center mt-10 cursor-pointer  bg-primary text-white py-1 px-5 rounded-full mt-4
+              hover:scale-105 duration-105 duration-200 group-hover:bg-white group-hover:text-primary
+              ">
                 View All Books
               </button>
             </div>

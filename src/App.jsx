@@ -2,6 +2,8 @@ import React from 'react'
 import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero'
 import BestBooks from './components/BestBooks/BestBooks'
+import Banner from './components/Banner/Banner'
+import AppStoreBanner from './components/AppStoreBanner/AppStoreBanner'
 
 const App = () => {
   return (
@@ -10,6 +12,8 @@ const App = () => {
           <Navbar/>
           <Hero/>
           <BestBooks/>
+          <Banner/>
+          <AppStoreBanner/>
       </div>
     </>
   )
