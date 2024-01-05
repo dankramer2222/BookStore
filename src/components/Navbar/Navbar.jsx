@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from "../../assets/website/logo.png"
+import { FaCaretDown } from "react-icons/fa";
 
 const Menu = [
     {
@@ -14,9 +15,24 @@ const Menu = [
     },
 ];
 
+const DropdownLinks = [
+    {
+        name: "Trending Books",
+        link:"/#",
+    },
+    {
+        name:"Best Selling",
+        link:"/#",
+    },
+    {
+        name:"Authors",
+        link:"/#",
+    },
+];
+
 const Navbar = () => {
   return (
-    <div>
+    <div className='shadow-lg'>
         <div className="container py-3 sm:py-0"
         >
             <div className="flex justify-between items-center">
@@ -43,10 +59,27 @@ const Navbar = () => {
                         }
                         {/* dropdown section */}
                         <li className='group relative cursor-pointer'> 
-                            <a href="/#">
-                                Quick links
+                            <a href="/#"
+                            className='flex h-[72px] items-center gap[2px]'
+                            >
+                                Quick Links
+                                <span>
+                                    <FaCaretDown className='transition duration-300 group-hover:rotate-180'/>
+                                </span>
                             </a>
                         </li>
+                        {/* dropdown Link section */}
+                        <div className='absolute-left-9'>
+                            <ul>
+                                {
+                                    DropdownLinks.map((data)=>(
+                                        <li key={data.id}>
+                                            <a href={data.link}>{data.name}</a>
+                                        </li>
+                                    ))
+                                }
+                            </ul>
+                        </div>
                     </ul>
                 </div>
             </div>
