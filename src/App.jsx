@@ -1,18 +1,19 @@
 import React from 'react'
 import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero'
+import BestBooks from './components/BestBooks/BestBooks'
 
 const App = () => {
   return (
     <>
-      <div>
-        <div className="container">
+      <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
           <Navbar/>
           <Hero/>
-        </div>
+          <BestBooks/>
       </div>
     </>
   )
 }
 
-export default App
+export default App;
+

@@ -10,21 +10,21 @@ const ImageList = [
     img: Book1,
     title: "His Life will forever be Changed",
     description:
-      "The Book of Life records those people considered righteous before God. To be blotted out of this book signifies death. To be in this book ensures one of life on the day of judgment. Even before birth, those who will be born are written in this book.",
+      "lorem His Life will forever be Changed dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     id: 2,
     img: Book2,
-    title: "Who's There? by Stephanie S. Tolan | Goodreads",
+    title: "Who's there",
     description:
-      "A tragic family past haunts orphans Drew and Evan Broderick when they return to live in their late father's childhood home, where a ghost keeps trying to warn Drew that something threatens her.",
+      "Who's there lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     id: 3,
     img: Book3,
     title: "Lost Boy",
     description:
-      "There is one version of my story that everyone knows. And then there is the truth. This is how it happened. How I went from being Peter Pan’s first—and favorite—lost boy to his greatest enemy",
+      "Lost Boy, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
 ];
 
@@ -65,7 +65,7 @@ const Hero = ({ handleOrderPopup }) => {
               >
                 {title}
                 <p class="bg-clip-text text-transparent bg-gradient-to-b from-primary text-right text-sm to-secondary">
-                  by Gleason Ledyard
+                  by Anonymous
                 </p>{" "}
               </h1>
               <p
