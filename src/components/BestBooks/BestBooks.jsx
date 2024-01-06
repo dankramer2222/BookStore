@@ -42,7 +42,7 @@ const booksData = [
   },
 ];
 
-const Books = () => {
+const Books = ({handleOrderPopup}) => {
   return (
     <>
       <div className="mt-14 mb-12">
@@ -70,7 +70,9 @@ const Books = () => {
                     alt=""
                     className="h-[220px] w-[150px] object-cover rounded-md "
                   />
-                  <div>
+                  <div
+                  data-aos="zoom-in"
+                  >
                     <h3 className="font-semibold">{title}</h3>
                     <p className="text-sm text-gray-700">{author}</p>
                     <div className="flex items-center gap-1">
@@ -82,7 +84,9 @@ const Books = () => {
               ))}
             </div>
             <div className="flex justify-center">
-              <button className="text-center mt-10 cursor-pointer  bg-primary text-white py-1 px-5 rounded-full mt-4
+              <button 
+              onClick={handleOrderPopup}
+              className="text-center mt-10 cursor-pointer  bg-primary text-white py-1 px-5 rounded-full mt-4
               hover:scale-105 duration-105 duration-200 group-hover:bg-white group-hover:text-primary
               ">
                 View All Books

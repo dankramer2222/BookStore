@@ -50,10 +50,10 @@ const Footer = () => {
                         <p>+12066749325</p>
                     </div>
                     <div className='flex items-center gap-3 mt-6'>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/in/danilaalbutov/">
                         <FaLinkedin className = "text-3xl"/>
                         </a>
-                        <a href="#">
+                        <a href="https://github.com/dankramer2222">
                         <FaGithub className = "text-3xl"/>
                         </a>
                     </div>

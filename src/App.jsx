@@ -8,18 +8,42 @@ import AllBooks from './components/AllBooks/AllBooks'
 import Testimonial from './components/Testimonial/Testimonial'
 import Footer from './components/Footer/Footer'
 
+//aos import
+import AOS from "aos"
+import "aos/dist/aos.css"
+import Popup from './components/Popup/Popup'
+import OrderPopup from './components/Popup/Popup'
+
 const App = () => {
+
+  const [orderPopup, setOrderPopup] = React.useState(false);
+  const handleOrderPopup = () =>{
+    setOrderPopup(!orderPopup);
+  };
+
+  React.useEffect(()=>{
+    AOS.init({
+      offset:100,
+      duration:800,
+      easing:"ease-in-sine",
+      delay:100,
+    });
+    AOS.refresh();
+},[]);
+
+
   return (
     <>
       <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
-          <Navbar/>
-          <Hero/>
-          <BestBooks/>
-          <Banner/>
-          <AppStoreBanner/>
-          <AllBooks/>
-          <Testimonial/>
-          <Footer/>
+          <Navbar handleOrderPopup={handleOrderPopup} />
+          <Hero handleOrderPopup={handleOrderPopup} />
+          <BestBooks handleOrderPopup={handleOrderPopup}/>
+          <Banner />
+          <AppStoreBanner />
+          <AllBooks />
+          <Testimonial />
+          <Footer />
+          <OrderPopup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
       </div>
     </>
   )
