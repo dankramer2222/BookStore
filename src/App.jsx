@@ -6,6 +6,7 @@ import Banner from './components/Banner/Banner'
 import AppStoreBanner from './components/AppStoreBanner/AppStoreBanner'
 import AllBooks from './components/AllBooks/AllBooks'
 import Testimonial from './components/Testimonial/Testimonial'
+import Footer from './components/Footer/Footer'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <AppStoreBanner/>
           <AllBooks/>
           <Testimonial/>
+          <Footer/>
       </div>
     </>
   )
